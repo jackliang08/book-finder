@@ -8,8 +8,6 @@ df = pd.read_csv("book_data.csv")
 cleaner = BookFilter(df)  # Class for filtering and cleaning data / only for the beginning
 finder = BookFinder(df)  # Class for displaying data / main class to use
 
-#self.genres = {'signal_processing': 3, 'data_science': 17, 'mathematics': 5, 'economics': 10, 'history': 26, 'science': 37, 'psychology': 1, 'fiction': 141, 'computer_science': 11, 'nonfiction': 88, 'philosophy': 34, 'comic': 13, 'tech': 36}
-
 
 
 recommend_indexes = []
