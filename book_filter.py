@@ -3,7 +3,7 @@ class BookFilter:
     def __init__(self,data):
         self.data = data
         # Creates a count for genres
-        self.genres = {'signal_processing': 3, 'data_science': 17, 'mathematics': 5, 'economics': 10, 'history': 26, 'science': 37, 'psychology': 1, 'fiction': 141, 'computer_science': 11, 'nonfiction': 88, 'philosophy': 34, 'nonfiction': 137, 'fiction': 703, 'children': 11}
+        self.genres = {'signal_processing': 3, 'data_science': 17, 'mathematics': 5, 'economics': 10, 'history': 26, 'science': 37, 'psychology': 1, 'fiction': 766, 'computer_science': 11, 'nonfiction': 167, 'philosophy': 34, 'children': 11}
     # Counts the amount of each genre
     # Alters self.genres
     def genre_counter(self) -> None:
