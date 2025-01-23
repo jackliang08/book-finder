@@ -8,6 +8,8 @@ df = pd.read_csv("book_data.csv")
 cleaner = BookFilter(df)  # Class for filtering and cleaning data / only for the beginning
 finder = BookFinder(df)  # Class for displaying data / main class to use
 
+#self.genres = {'signal_processing': 3, 'data_science': 17, 'mathematics': 5, 'economics': 10, 'history': 26, 'science': 37, 'psychology': 1, 'fiction': 141, 'computer_science': 11, 'nonfiction': 88, 'philosophy': 34, 'comic': 13, 'tech': 36}
+
 
 
 recommend_indexes = []
@@ -16,12 +18,14 @@ current_index = 0
 # **FUNCTIONS**
 
 
-
+# Updates the screen
 def set_outputs(dataFrame,index:int) -> None:
     title_var.set(dataFrame.iloc[index]["Title"])
     author_var.set(dataFrame.iloc[index]["Author"])
     genre_var.set(dataFrame.iloc[index]["Genre"])
 
+# selects index to the right of the current one (in the recommend_indexes list)
+# Resets to zero upon index going out of range
 def index_right():
     global current_index
     if current_index < len(recommend_indexes) - 1:
@@ -29,6 +33,9 @@ def index_right():
     else:
         current_index = 0
     set_outputs(df,recommend_indexes[current_index])
+
+# selects index to the left of the current one (in the recommend_indexes list)
+# Resets to last element upon index going out of range
 def index_left():
     global current_index
     if current_index > 0:
