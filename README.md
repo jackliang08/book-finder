@@ -20,7 +20,7 @@ It contains three smaller programs, a main file and two libraries:<br/>
 # Functionalities on the site
 
 * There are three different input boxes, a search button, and arrows to select the book.
-* In each input box, the full name is not required to be entered for the program to work, and the field could be left blank.
+* In each input box, the full name is not required to be entered for the program to work, and the field **could be left blank.**
 * If the field is left blank, then the program will not consider that field as a requirement, and will only filter based on the other ones.
 * The inputs are not case sensitve.
 * The search button updates the recommended list.
