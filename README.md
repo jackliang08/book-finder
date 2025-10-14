@@ -25,3 +25,8 @@ It contains three smaller programs, a main file and two libraries:<br/>
 * The inputs are not case sensitve.
 * The search button updates the recommended list.
 * The left and right arrows allow the user to traverse the list of books which meet the requirements.
+
+## Database
+
+When applying this program, replace the data from **book_data.csv** to fit your own purposes (library database, personal collection, etc).
+
